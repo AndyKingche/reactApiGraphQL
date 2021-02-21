@@ -1,19 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
+import Logoqm from '../../img/logo_qm21.png'
+import logograph from '../../img/logo.png'
+import logoreact from '../../img/react.png'
 
 function Footer() {
 
-   return( <FooterContainer  className="main-footer">
+   return( <FooterContainer  className="nuevo-footer">
        <div className="footer-middle">
         <div className="container">
             <div className= "row">
                 <div className="col-md-3 col-sm-6">
-                    <h4>Blog</h4>
-                    <p>
-                        Este es un cliente desarrollado en React Js y es parte del proyetco de Trabajo de grado para medir la eficiencia 
-                        del consumo de datos de una API desarrollada con GraphQL 
-                    </p>
-
+                    <h4> Api- GraphQL / Blog</h4>
+                    <p className="nuevo-footer__parrafo--contenido">
+                        Este es un proyecto de Trabajo de grado como parte de una investigaci&oacute;n para medir la eficiencia 
+                        del consumo de datos en cuanto al tiempo de respuesta de una API desarrollada con GraphQL.
+                    </p> 
+                </div>
+                <div className="col-md-3 col-sm-6">
+                <img className="nuevo-footer__background--imagen" src={Logoqm} />
+                </div>
+                <div className="col-md-3 col-sm-6">
+                <img className="nuevo-footer__background--imagen" src={logograph} />
+                </div>
+                <div className="col-md-3 col-sm-6">
+                <img className="nuevo-footer__background--imagen" src={logoreact} />
                 </div>
             </div>
 

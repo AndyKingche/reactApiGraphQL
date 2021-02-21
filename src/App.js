@@ -21,6 +21,7 @@ function App() {
        <Route path="/categorias" component={categorias}/>
        <Route path="/posts" component={posts}/>
      </Switch>
+
      <Footer></Footer>
     </div>
     
