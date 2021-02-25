@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Logoqm from '../../img/logo_qm21.png'
 import logograph from '../../img/logo.png'
 import logoreact from '../../img/react.png'
+import apollologo from '../../img/Apollo.png'
 
 function Footer() {
 
@@ -25,6 +26,7 @@ function Footer() {
                 </div>
                 <div className="col-md-3 col-sm-6">
                 <img className="nuevo-footer__background--imagen" src={logoreact} />
+                <img className="nuevo-footer__background--imagen" src={apollologo} />
                 </div>
             </div>
 

@@ -3,7 +3,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Navegacion from './components/Layouts/Navbar/index'
 import Footer from './components/Layouts/Footer/index'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import home from './components/pages/home'
 import usuarios from './components/pages/usuarios'
 import comentarios from './components/pages/comentarios'
@@ -14,6 +14,10 @@ function App() {
 <>
     <div className="App">
      <Navegacion></Navegacion>
+     <Route exact path="/">
+       <Redirect to="/home">
+       </Redirect>
+     </Route>
      <Switch>
        <Route path="/home" component={home}/>
        <Route path="/usuarios" component={usuarios}/>
@@ -21,7 +25,7 @@ function App() {
        <Route path="/categorias" component={categorias}/>
        <Route path="/posts" component={posts}/>
      </Switch>
-
+     
      <Footer></Footer>
     </div>
     
